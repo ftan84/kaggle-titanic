@@ -7,3 +7,12 @@ from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import cross_val_score, GridSearchCV, KFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
+
+def mlp_baseline():
+    '''Baseline model
+
+    This is the baseline model which consists of a network with one hidden
+    layer consisting of the same number of neurons as input neruons.
+    '''
+    model = Sequential()
+    model.add(Dense())
